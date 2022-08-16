@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Alternates|Poppins&display=swap');
+	*{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		font-family: 'Montserrat Alternates', sans-serif;
+	}
+	body{
+		background: url("../img/FONDO.jpg");
+		background-size: 100vw 100vh;
+		background-repeat: no-repeat;
+    background-attachment: fixed;
+	}
+	/* .capa{
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		background: rgba(0,0,0,0.6);
+		z-index: -1;
+		top: 0;left: 0;
+	} */
+	.header{
+		width: 100%;
+		height: 90px;
+		position: static;
+		top: 0;left: 0;
+	}
+	.container{
+		width: 90%;
+		max-width: 1200px;
+		margin: auto;
+	}
+	.container .btn-menu, .logo{
+		float: left;
+		line-height:100px;
+	}
+	.container .btn-menu label{
+		color: #fff;
+		font-size: 25px;
+		cursor: pointer;
+	}
+	.container .menu{
+		float: right;
+		line-height: 100px;
+	}
+	.container .menu a{
+		display: inline-block;
+		padding: 15px;
+		line-height: normal;
+		text-decoration: none;
+		color: #fff;
+		transition: all 0.3s ease;
+		border-bottom: 2px solid transparent;
+		font-size: 15px;
+		margin-right: 5px;
+	}
+	.container .menu a:hover{
+		border-bottom: 2px solid #c7c7c7;
+		padding-bottom: 5px;
+	}
+
+	#btn-menu{
+		display: none;
+	}
+	.container-menu{
+		position: absolute;
+		background: rgba(0,0,0,0.5);
+		width: 100%;
+		height: 100vh;
+		top: 0;left: 0;
+		transition: all 500ms ease;
+		opacity: 0;
+		visibility: hidden;
+	}
+	#btn-menu:checked ~ .container-menu{
+		opacity: 1;
+		visibility: visible;
+    z-index: 2;
+	}
+	.btn-abrir:hover{
+		background: #f57b00;
+		border-radius: 4px;
+		padding: 1px;
+	}
+	.btn-cerrar:hover{
+		background: red;
+		border-radius: 100%;
+	}
+	.cont-menu{
+		width: 100%;
+		max-width: 250px;
+		background: #2A2420;
+		height: 100vh;
+		position: absolute;
+		transition: all 500ms ease;
+		transform: translateX(-100%);
+	}
+	#btn-menu:checked ~ .container-menu .cont-menu {
+		transform: translateX(0%);
+	}
+	.cont-menu div{
+		transform: translateY(15%);
+	}
+	.cont-menu div a{
+		display: block;
+		text-decoration: none;
+		padding: 20px;
+		color: #c7c7c7;
+		border-left: 5px solid transparent;
+		transition: all 400ms ease;
+	}
+	.cont-menu div a:hover{
+		border-left: 5px solid #c7c7c7;
+		background: #734222;
+	}
+	.cont-menu label{
+		position: absolute;
+		right: 5px;
+		top: 10px;
+		color: #fff;
+		cursor: pointer;
+		font-size: 18px;
+	}
+.logo img{
+	margin-top: 20px;
+	display: inline;
+	width: 70px;
+	height: 60px;
+}
+.logo h1{
+	display: inline;
+	color: white;
+	font-size: 40px;
+	font-family: 'Dancing Script', cursive;
+	margin-top: 200px;
+}
+
+.img-perfil{
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	background-color: #719af1;
+}
+.metodos{
+  margin-left: 21%;
+  background: #543311;
+  width: 830px;
+	height: 60px;
+  border-radius: 15px;
+  box-shadow: 0 0 6px 0 #fff;
+}
+.metodos h1{
+  text-align: center;
+  margin: 10px 0;
+  font-weight: 800;
+  color: White;
+  padding: 10px;
+	margin-bottom: -10px;
+}
+
+table, th, td {
+	padding: 16.5px;
+  	border-radius: 15px;
+	border-spacing: 10px;
+}
+
+th{
+	background: #543311;
+	box-shadow: 0 0 6px 0 #fff;
+}
+
+.grupo img{
+  padding: 20px;
+  width: 350px;
+  height: 150px;
+}
+
+.grupo:hover {
+	background: #734222;
+}
+.grupo:hover img{
+  transform: scale(1.1);
+}
+
+button{
+	height: 38px;
+  width: 500px;
+	padding: 0 30px;
+	color: rgb(255, 255, 255);
+	text-align: center;
+	font-size: 11px;
+	font-weight: 600;
+	line-height: 38px;
+	letter-spacing: .1rem;
+	text-transform: uppercase;
+	text-decoration: none;
+	white-space: nowrap;
+	background-color: #2A2420;
+	border-radius: 4px;
+	border: 1px solid #bbb;
+	cursor: pointer;
+	box-sizing: border-box;
+	margin-left: 20%;
+	margin-top: -10px;
+	margin-bottom: 10px;
+}
+
+button:hover{
+	background: #734222;
+}

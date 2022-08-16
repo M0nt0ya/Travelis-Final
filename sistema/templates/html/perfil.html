@@ -1,0 +1,66 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Travelist - Perfil</title>
+    <link rel="icon" href="{% static 'img/LOGO PEQUEÑO.jpeg' %}">
+    <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="{% static 'css/estilos17.css' %}">
+  </head>
+  <body>
+    <section class="seccion-perfil-usuario">
+        <div class="perfil-usuario-header">
+            <div class="perfil-usuario-portada">
+                <div id="div-imagen-portada">
+                    <img id="imagen-portada" class="imagen-portada" src="https://i.pinimg.com/originals/28/41/0a/28410aee36b58b2d328e53e3f423db90.jpg" alt="img-portada" onclick="openImgPort()">
+                </div>
+                <button type="button" class="boton-portada">
+                    <i class="far fa-image"></i> Cambiar fondo
+                    <input id="cambio-img-port" type="file" accept="image/*" onchange="return validarImagenPort()">
+                </button>
+                <div class="perfil-usuario-avatar" id="perfil-usuario-avatar">
+                    <div id="Imagen-perfil">
+                        <img id="image" class="img-perfil" src="https://www.cinemascomics.com/wp-content/uploads/2020/08/goku-dragon-ball-super-ultra-instinto.jpg" alt="img-perfil" onclick="openImgPer()">
+                    </div>
+                    <button type="button" class="boton-avatar">
+                        <i class="far fa-image"></i>
+                        <input id="cambio-img" type="file" accept="image/*" onchange="return validarImagen()">
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="perfil-usuario-body">
+            <div class="perfil-usuario-bio">
+                <h3 class="titulo">Ismael Andrade</h3>
+                <p class="texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <div class="perfil-usuario-footer">
+                <ul class="lista-datos">
+                    <li><i class="icono fas fa-map-signs"></i> Usuario: Ismael Andrade</li>
+                    <li><i class="icono fas fa-phone-alt"></i> Telefono: 0984101922</li>
+                    <li><i class="icono fas fa-briefcase"></i> Trabaja en: N/A</li>
+                    <li><i class="icono fas fa-building"></i> Cargo: N/A</li>
+                </ul>
+                <ul class="lista-datos">
+                    <li><i class="icono fas fa-map-marker-alt"></i> Ubicacion: Guamani</li>
+                    <li><i class="icono fas fa-calendar-alt"></i> Fecha nacimiento: 14/12/2003</li>
+                    <li><i class="icono fas fa-user-check"></i> Registro: SI</li>
+                    <li><i class="icono fas fa-share-alt"></i> Redes sociales: SI</li>
+                </ul>
+            </div>
+            <div class="redes-sociales">
+                <a href="" class="boton-redes facebook fab fa-facebook-f"><i class="icon-facebook"></i></a>
+                <a href="" class="boton-redes twitter fab fa-twitter"><i class="icon-twitter"></i></a>
+                <a href="" class="boton-redes instagram fab fa-instagram"><i class="icon-instagram"></i></a>
+            </div>
+        </div>
+    </section>
+    <button type="button" name="button" class="boton-atras" role="link" onclick="history.go(-1);">Atras</button>
+    <button type="button" name="button" class="boton-cerrar" role="link" onclick="window.location='../index.html'">Cerrar Sesión</button>
+    <script src="jmain7.js"></script>
+  </body>
+</html>

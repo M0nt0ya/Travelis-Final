@@ -1,0 +1,442 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Caompatible" content="ie=edge">
+    <title>Travelist - Rutas</title>
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Raleway:500,600&display=swap" rel="stylesheet">
+    <link rel="icon" href="{% static 'img/LOGO PEQUEÑO.jpeg' %}">
+    <link rel="stylesheet" href="../css/estilos4.css">
+</head>
+<body>
+  <header class="header">
+		<div class="container">
+		<div class="btn-menu">
+			<label for="btn-menu" class="btn-abrir">☰</label>
+		</div>
+			<div class="logo">
+          <img src="{% static 'img/LOGO PEQUEÑO.jpeg' %}" alt="" align="left">
+          <h1>Travelist</h1>
+			</div>
+			<div class="menu">
+        <a href="../index.html">Inicio</a>
+				<a href="../html/login.html">Iniciar Sesión</a>
+				<a href="../html/registro.html">Registro</a>
+			</div>
+		</div>
+	</header>
+	<div class="capa"></div>
+<input type="checkbox" id="btn-menu">
+<div class="container-menu">
+	<div class="cont-menu">
+		<div>
+			<a href="https://www.facebook.com/profile.php?id=100082181743423" target="_blank">Facebook</a>
+			<a href="https://www.instagram.com/cop_travelist/" target="_blank">Instagram</a>
+            <a href="https://twitter.com/DarlinSimba" target="_blank">Twitter</a>
+            <a href="https://wa.me/593994101922" target="_blank">WhatsApp</a>
+            <a href="html/rutas.html">Rutas y Destinos</a>
+            <a href="{% url 'opinion' %}">Opinion</a>
+		</div>
+		<label for="btn-menu" class="btn-cerrar">✖️</label>
+	</div>
+</div>
+<div class="todo">
+  <h1 class="titulo-pri">RUTAS Y HORARIOS</h1>
+  <div class="rutas">
+    <img src="https://www.tooltyp.com/wp-content/uploads/2014/10/1900x920-8-beneficios-de-usar-imagenes-en-nuestros-sitios-web.jpg" class="img-izq" id="Atacames" >
+    <h1 class="centradoa">Atacames</h1>
+      <section class="parrafo-der1">
+          <center>
+        <p>Atacames-Carcelén (Vía los Bancos)</p>
+        <p>10:30 - 15:30 - 23:30 </p>
+        <hr>
+        <p>Atacames-Quitumbe (Vía Sto. Domingo)</p>
+        <p>13:30 - 23:00</p>
+        <hr>
+        <p>Atacames-Valle-Quitumbe (Vía Sto. Domingo)</p>
+        <p>22:00</p>
+        <hr>
+        <p>Atacames-Guayaquil</p>
+        <p>08:00 - 22:45</p>
+        <hr>
+        <p>Atacames-Guayaquil</p>
+        <p>08:00 - 22:45</p>
+        <hr>
+        <p>Atacames-Manta</p>
+        <p>20:30</p>
+        <hr>
+        <p>Atacames-Machala-Huaquillas</p>
+        <p>19:45</p>
+        <hr>
+        <p>Atacames-Cuenca</p>
+        <p>17:30</p>
+        <hr>
+           </center>
+        </section>
+
+
+    <!--Borbon-->
+    <img src="https://empresas.blogthinkbig.com/wp-content/uploads/2019/11/Imagen3-245003649.jpg?w=800" class="img-der"  id="Borbon">
+    <h1 class="centradob">Borbon</h1>
+      <section class="parrafo-izq1">
+          <center>
+      <p>Borbón-Guayaquil</p>
+      <p>09:00 - 20:30</p>
+      <hr>
+      <p>Borbón-Quitumbe</p>
+      <p>10:00 - 22:00</p>
+      <hr>
+      <p>Borbón-Manta</p>
+      <p>21:15</p>
+      <hr>
+      <p>Borbón-Carcelén (Los Bancos)</p>
+      <p>21:30</p>
+      <hr>
+        </center>
+        </section>
+
+    <!--El Coca-->
+        <img src="https://d7lju56vlbdri.cloudfront.net/var/ezwebin_site/storage/images/_aliases/seo/noticias/solar-orbiter-toma-imagenes-del-sol-como-nunca-antes/9437612-1-esl-MX/Solar-Orbiter-toma-imagenes-del-Sol-como-nunca-antes.jpg" class="img-izq" id="El Coca">
+        <h1 class="centradoc">El Coca</h1>
+      <section class="parrafo-der2">
+          <center>
+      <p>Coca-Carcelén-Valle-Quitumbe </p>
+      <p>20:30</p>
+      <hr>
+      <p>Coca-Carcelén-Quitumbe </p>
+      <p>23:30</p>
+      <hr>
+          </center>
+      </section>
+
+    <!--Cuenca-->
+      <img src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE2opyy?ver=d231" class="img-der" id="Cuenca">
+      <h1 class="centradod">Cuenca</h1>
+      <section class="parrafo-izq2">
+          <center>
+            <p>Cuenca-Esmeraldas-Atacames</p>
+            <p>21:15 - 23:30</p>
+            <hr>
+          </center>
+      </section>
+
+      <!--Esmeraldas-->
+      <img  src="https://www.lucushost.com/blog/wp-content/uploads/2021/07/paginas-para-descargar-imagenes-gratis.png" class="img-izq" id="Esmeraldas">
+      <h1 class="centradoe">Esmeraldas</h1>
+      <section class="parrafo-der3">
+        <center>
+      <p>Esmeraldas-Quitumbe (Vía Santo Domingo)</p>
+      <p>06:25 - 08:20 - 09:20 - 11:40 - 12:35 - 15:40 <br>
+        17:05 - 20:05 - 22:15 - 00:30</p>
+      <hr>
+      <p>Esmeraldas-Carcelén (Vía los Bancos)</p>
+      <p>07:15 - 10:25 - 13:15 - 14:40 - 16:30 - 23:30 - 23:55 - 00:55</p>
+      <hr>
+      <p>Esmeraldas-Valle-Quitumbe </p>
+      <p>22:55</p>
+      <hr>
+      <p>Esmeraldas-Guayaquil</p>
+      <p>07:05 - 07:50 - 09:00 - 10:15 - 11:00 - 12:15 - 13:50 <br>
+         15:15 - 16:40 - 21:00 - 22:00 - 22:45 - 23:00 - 23:45</p>
+      <hr>
+      <p>Esmeraldas-Machala-Huquillas</p>
+      <p>17:55 - 20:40</p>
+      <hr>
+      <p>Esmeraldas-Manta</p>
+      <p>22:25</p>
+      <hr>
+      <p>Esmeraldas-Salinas</p>
+      <p>19:40</p>
+      <hr>
+      <p>Esmeraldas-Cuenca</p>
+      <p>18:35</p>
+      <hr>
+          </center>
+      </section>
+
+
+      <!-Guayaquil-->
+      <img src="https://www.adslzone.net/app/uploads-adslzone.net/2020/12/imagenes.jpg?x=480&y=375&quality=40" class="img-der" id="Guayaquil">
+      <h1 class="centradof">Guayaquil</h1>
+      <section class="parrafo-izq3">
+          <center>
+      <p>Guayaquil-Esmeralda</p>
+      <p>07:00 - 07:45 - 09:45 - 11:50 - 13:15 - 14:30 - 15:40 <br>
+        16:40 - 20:00 - 21:00 - 22:10 - 22:30 23:00 - 23:30 23:50</p>
+      <hr>
+      <p>Guayaquil-Atacames</p>
+      <p>09:10 - 10:30 - 21:40</p>
+      <hr>
+      <p>Guayaquil-Atacames-Muisne</p>
+      <p>21:45</p>
+      <hr>
+      <p>Guayaquil-San Lorenzo</p>
+      <p>08:30 - 17:50 - 20:30 - 21:30</p>
+      <hr>
+          </center>
+      </section>
+
+
+      <!--Huaquillas-->
+      <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg" class="img-izq" id="Huaquillas">
+      <h1 class="centradog">Huaquillas</h1>
+      <section class="parrafo-der4">
+        <center>
+      <p>Huaquillas-Valle-Carcelén</p>
+      <p>18:00</p>
+      <hr>
+      <p>Huaquillas-Quitumbe</p>
+      <p>19:00 - 21:00</p>
+      <hr>
+      <p>Huaquillas-Esmeraldas-Atacames</p>
+      <p>15:45 - 19:30</p>
+      <hr>
+        </center>
+      </section>
+
+    <!--Lago Agrio-->
+      <img src="https://www.lancetalent.com/blog/wp-content/uploads/Disen%CC%83o-sin-ti%CC%81tulo-42-1.png" class="img-der" id="Lago Agrio">
+      <h1 class="centradoh">Lago Agrio</h1>
+      <section class="parrafo-izq4">
+        <center>
+      <p>Lago Agrio-Carcelén-Valle-Quitumbe</p>
+      <p>21:20</p>
+      <hr>
+      <p>Lago Agrio-Carcelén-Quitumbe</p>
+      <p>23:55</p>
+      <hr>
+    </center>
+      </section>
+
+
+    <!--Machala-->
+      <img src="https://josefacchin.com/wp-content/uploads/2017/09/bancos-imagenes-gratis.png" class="img-izq" id="Machala">
+      <h1 class="centradoi">Machala</h1>
+      <section class="parrafo-der5">
+        <center>
+      <p>Machala-Valle-Carcelén</p>
+      <p>19:45</p>
+      <hr>
+      <p>Machala-Quitumbe</p>
+      <p>21:15</p>
+      <hr>
+      </center>
+      </section>
+
+
+      <!--Manta-->
+      <img class="img-der" src="https://www.40defiebre.com/wp-content/uploads/2015/10/imagenes.png" id="Manta">
+      <h1 class="centradoj">Manta</h1>
+      <section class="parrafo-izq5">
+        <center>
+      <p>Manta-Carcelén (Vía Villegas)</p>
+      <p>08:15 - 21:00</p>
+      <hr>
+      <p>Manta-Valle-Quitumbe</p>
+      <p>21:30</p>
+      <hr>
+      <p>Manta-Esmeraldas-Atacames</p>
+      <p>21:15</p>
+      <hr>
+      <p>Manta-San Lorenzo</p>
+      <p>20:00</p>
+      <hr>
+        </center>
+      </section>
+
+
+      <!--Muisne-->
+      <img src="https://www.rdstation.com/blog/wp-content/uploads/sites/2/2017/09/pixabay.jpg" class="img-izq" id="Muisne">
+      <h1 class="centradok">Muisne</h1>
+      <section class="parrafo-der6">
+        <center>
+      <p>Muisne-Manta</p>
+      <p>19:15</p>
+      <hr>
+      <p>Muisne-Guayaquil</p>
+      <p>21:30</p>
+      <hr>
+      <p>Muisne-Quitumbe</p>
+      <p>21:45</p>
+        </center>
+      </section>
+
+      <!--Porto viejo-->
+      <img src="https://kinsta.com/es/wp-content/uploads/sites/8/2020/10/tipos-de-archivos-de-imagen.png" class="img-der" id="Portoviejo">
+      <h1 class="centradol">Porto viejo</h1>
+      <section class="parrafo-izq6">
+        <center>
+      <p>Santo Domingo-Carcelen</p>
+      <p>20:00 - 21:15 - 24:00</p>
+      <hr>
+      <p>Santo Domingo-Quitumbe</p>
+      <p>07:30 - 09:30 - 15:20</p>
+      <hr>
+      <p>Santo Domingo-Esmeraldas</p>
+      <p>11:00 - 16:15</p>
+      <hr>
+      <p>Santo Domingo-Guayaquil</p>
+      <p>07:50 - 16:45</p>
+      <hr>
+      <p>Santo Domingo-Tonzupa</p>
+      <p>10:25 - 18:55</p>
+      <hr>
+        </center>
+      </section>
+
+
+      <!--Carcelen-->
+      <img src="https://marketing4ecommerce.net/wp-content/uploads/2019/05/im%C3%A1genes-de-redes-sociales_phixr-compressor-1280x720.jpg" class="img-izq" id="Carcelen">
+      <h1 class="centradom"> Quito-Carcelen</h1>
+      <section class="parrafo-der7">
+        <center>
+      <p>Carcelén-Esmeraldas-Atacames (Vía Los Bancos)</p>
+      <p>08:00 - 13:30 - 18:10 - 23:55</p>
+      <hr>
+      <p>Carcelén-Esmeraldas (Vía Los Bancos)</p>
+      <p>09:10 - 10:30 - 11:10 - 14:05 - 16:30 <br> 19:45 - 20:40 - 23:15 - 00:30</p>
+      <hr>
+      <p>Esmeraldas-Valle-Quitumbe </p>
+      <p>22:55</p>
+      <hr>
+      <p>Carcelén-Guayaquil-Santa Elena</p>
+      <p>20:30 - 21:20</p>
+      <hr>
+      <p>Carcelén-Portoviejo-Manta</p>
+      <p>08:00 - 22:30 - 22:45 (Portoviejo)</p>
+      <hr>
+      <p>Carcelén-Machala-Huquillas</p>
+      <p>18:40 - 21:00</p>
+      <hr>
+      <p>Carcelén-Ibarra-San Lorenzo</p>
+      <p>23:30</p>
+      <hr>
+      <p>Carcelén-El Coca</p>
+      <p>21:30</p>
+      <hr>
+      <p>Carcelén-Lago Agrio</p>
+      <p>23:00</p>
+      <hr>
+        </center>
+      </section>
+
+
+      <!--Quitumbe-->
+      <section>
+      <img src="https://josefacchin.com/wp-content/uploads/2017/12/como-reducir-tamao-imagenes.png" class="img-der" id="Quitumbe">
+      <h1 class="centradon">Quito Quitumbe</h1>
+      <section class="parrafo-izq7">
+        <center>
+      <p>Quitumbe-Esmeraldas (Vía Santo Domingo)</p>
+      <p>08:25 - 09:45 - 11:10 - 12:00 - 13:25 <br> 15;00 - 17:35 - 19:00 - 21:45 - 23:00</p>
+      <hr>
+      <p>Quitumbe-Esmeraldas-Atacames-Muisne</p>
+      <p>07:30 - 23:40</p>
+      <hr>
+      <p>Quitumbe-Guayaquil-Santa Elena</p>
+      <p>20:50 - 22:15</p>
+      <hr>
+      <p>Quitumbe-Ibarra-San Lorenzo (Vía Ibarra)</p>
+      <p>22:35</p>
+      <hr>
+      <p>Quitumbe-Machala-Huaquillas</p>
+      <p>21:15 -  22:30</p>
+      <hr>
+      <p>Quitumbe-Borbón-San Lorenzo</p>
+      <p>19:00 - 22:20</p>
+      <hr>
+      <p>Quitumbe-El Coca</p>
+      <p>20:20</p>
+      <hr>
+      <p>Quitumbe-Lago Agrio</p>
+      <p>20:45</p>
+      <hr>
+        </center>
+      </section>
+
+
+      <!--San Rafael-->
+      <img src="https://st2.depositphotos.com/1288351/5862/i/600/depositphotos_58628561-stock-photo-night-sky-praise.jpg" class="img-izq" id="Rafael">
+      <h1 class="centradoo">Quito-San Rafael</h1>
+      <section class="parrafo-der8">
+        <center>
+      <p>Valle-Esmeraldas-Atacames</p>
+      <p>23:30</p>
+      <hr>
+      <p>Valle-Machala-Huaquillas</p>
+      <p>20:30</p>
+      <hr>
+      <p>Valle-Guayaquil-Salinas</p>
+      <p>22:30</p>
+      <hr>
+      <p>Valle-El Coca</p>
+      <p>21:30</p>
+      <hr>
+      <p>Valle-Portoviejo-Manta</p>
+      <p>22:15</p>
+      <hr>
+      <p>Valle-Lago Agrio</p>
+      <p>21:45</p>
+      <hr>
+        </center>
+      </section>
+
+
+      <!--Salinas-->
+      <img src="https://cdn.shopify.com/s/files/1/0229/0839/files/bancos_de_imagenes_gratis.jpg?v=1630420628&width=1024" class="img-der" id="Salinas">
+      <h1 class="centradop">Salinas</h1>
+        <center>
+      <section class="parrafo-izq8">
+      <p>Santa Elena-Carcelén</p>
+      <p>19:40</p>
+      <hr>
+      <p>Santa  Elena-Quitumbe</p>
+      <p>21:30</p>
+      <hr>
+      <p>Santa Elena-Valle-Quitumbe</p>
+      <p>20:35</p>
+      <hr>
+      <p>Santa Elena-Esmeralda</p>
+      <p>20:45</p>
+      <hr>
+        </center>
+      </section>
+
+
+      <!--San Lorenzo-->
+      <img src="https://www.rdstation.com/blog/wp-content/uploads/sites/2/2017/09/thestocks.jpg" class="img-izq" id="Lorenzo">
+      <h1 class="centradoq">San Lorenzo</h1>
+      <center>
+      <section class="parrafo-der9">
+      <p>San Lorenzo-Guayquil</p>
+      <p>08:00 - 17:30 - 20:30</p>
+      <hr>
+      <p>San Lorenzo-Quitumbe</p>
+      <p>09:00 - 20:00</p>
+      <hr>
+      <p>San Lorenzo-Manta</p>
+      <p>20:15</p>
+      <hr>
+      <p>San Lorenzo-Carcelén (Vía Ibarra)</p>
+      <p>23:00</p>
+      <hr>
+      </center>
+
+
+    <!--Viche-->
+      <img src="https://s1.1zoom.me/big3/471/Painting_Art_Back_view_Photographer_575380_3840x2400.jpg" class="img-der" id="Viche">
+      <h1 class="centrador">Viche</h1>
+      <section class="parrafo-izq9">
+        <center>
+      <p>Viche-Guayaquil</p>
+      <p>23:00</p>
+      <hr>
+        </center>
+      </section>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,538 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Alternates|Poppins&display=swap');
+	*{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		font-family: 'Montserrat Alternates', sans-serif;
+	}
+	body{
+		background: url("../img/FONDO.jpg");
+		background-size: 100vw 100vh;
+		background-repeat: no-repeat;
+    background-attachment: fixed;
+	}
+	/* .capa{
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		background: rgba(0,0,0,0.6);
+		z-index: -1;
+		top: 0;left: 0;
+	} */
+	.header{
+		width: 100%;
+		height: 90px;
+		position: static;
+		top: 0;left: 0;
+	}
+	.container{
+		width: 90%;
+		max-width: 1200px;
+		margin: auto;
+	}
+	.container .btn-menu, .logo{
+		float: left;
+		line-height:100px;
+	}
+	.container .btn-menu label{
+		color: #fff;
+		font-size: 25px;
+		cursor: pointer;
+	}
+	.container .menu{
+		float: right;
+		line-height: 100px;
+	}
+	.container .menu a{
+		display: inline-block;
+		padding: 15px;
+		line-height: normal;
+		text-decoration: none;
+		color: #fff;
+		transition: all 0.3s ease;
+		border-bottom: 2px solid transparent;
+		font-size: 15px;
+		margin-right: 5px;
+	}
+	.container .menu a:hover{
+		border-bottom: 2px solid #c7c7c7;
+		padding-bottom: 5px;
+	}
+
+	#btn-menu{
+		display: none;
+	}
+	.container-menu{
+		position: absolute;
+		background: rgba(0,0,0,0.5);
+		width: 100%;
+		height: 100vh;
+		top: 0;left: 0;
+		transition: all 500ms ease;
+		opacity: 0;
+		visibility: hidden;
+	}
+	#btn-menu:checked ~ .container-menu{
+		opacity: 1;
+		visibility: visible;
+    z-index: 2;
+	}
+  .btn-abrir:hover{
+		background: #f57b00;
+		border-radius: 4px;
+		padding: 1px;
+	}
+  .btn-cerrar:hover{
+		background: red;
+		border-radius: 100%;
+	}
+	.cont-menu{
+		width: 100%;
+		max-width: 250px;
+		background: #2A2420;
+		height: 100vh;
+		position: absolute;
+		transition: all 500ms ease;
+		transform: translateX(-100%);
+	}
+	#btn-menu:checked ~ .container-menu .cont-menu {
+		transform: translateX(0%);
+	}
+	.cont-menu div{
+		transform: translateY(15%);
+	}
+	.cont-menu div a{
+		display: block;
+		text-decoration: none;
+		padding: 20px;
+		color: #c7c7c7;
+		border-left: 5px solid transparent;
+		transition: all 400ms ease;
+	}
+	.cont-menu div a:hover{
+		border-left: 5px solid #c7c7c7;
+		background: #734222;
+	}
+	.cont-menu label{
+		position: absolute;
+		right: 5px;
+		top: 10px;
+		color: #fff;
+		cursor: pointer;
+		font-size: 18px;
+	}
+.logo img{
+	margin-top: 20px;
+	display: inline;
+	width: 70px;
+	height: 60px;
+}
+.logo h1{
+	display: inline;
+	color: white;
+	font-size: 40px;
+	font-family: 'Dancing Script', cursive;
+	margin-top: 200px;
+}
+.todo{
+  margin-top: 10px;
+}
+.todo .titulo-pri{
+  margin-left: 570px;
+  margin-bottom: 20px;
+  font-family: 'Dancing Script', cursive;
+  color: white;
+}
+img {
+  width: 630px;
+  height: 400px;
+  border-radius: 15px;
+  margin-top: 0;
+}
+.img-der{
+    margin-left: 670px;
+  }
+.img-izq{
+      margin-left: 50px;
+}
+
+.centradoa{
+    background: #000;
+    border-radius: 10px;
+    text-align: center;
+    position: absolute;
+    margin-top: -270px;
+    margin-left: 230px;
+    font-size: 55px;
+    color: white;
+    padding: 10px;
+}
+.centradob{
+    background: #000;
+    border-radius: 10px;
+    text-align: center;
+    position: absolute;
+    margin-top: -260px;
+    margin-left: 850px;
+    font-size: 55px;
+    color: white;
+    padding: 10px;
+}
+.centradoc{
+    background: #000;
+    border-radius: 10px;
+    text-align: center;
+    position: absolute;
+    margin-top: -270px;
+    margin-left: 230px;
+    font-size: 55px;
+    color: white;
+    padding: 10px;
+}
+.centradod{
+    background: #000;
+    border-radius: 10px;
+    text-align: center;
+    position: absolute;
+    margin-top: -270px;
+    margin-left: 850px;
+    font-size: 55px;
+    color: white;
+    padding: 10px;
+}
+.centradoe{
+    background: #000;
+    border-radius: 10px;
+    text-align: center;
+    position: absolute;
+    margin-top: -270px;
+    margin-left: 230px;
+    font-size: 55px;
+    color: white;
+    padding: 10px;
+}
+.centradof{
+    background: #000;
+    border-radius: 10px;
+    text-align: center;
+    position: absolute;
+    margin-top: -270px;
+    margin-left: 850px;
+    font-size: 55px;
+    color: white;
+    padding: 10px;
+}
+.centradog{
+    background: #000;
+    border-radius: 10px;
+    text-align: center;
+    position: absolute;
+    margin-top: -270px;
+    margin-left: 230px;
+    font-size: 55px;
+    color: white;
+    padding: 10px;
+}
+.centradoh{
+    background: #000;
+    border-radius: 10px;
+    text-align: center;
+    position: absolute;
+    margin-top: -270px;
+    margin-left: 850px;
+    font-size: 55px;
+    color: white;
+    padding: 10px;
+}
+.centradoi{
+    background: #000;
+    border-radius: 10px;
+    text-align: center;
+    position: absolute;
+    margin-top: -270px;
+    margin-left: 230px;
+    font-size: 55px;
+    color: white;
+    padding: 10px;
+}
+.centradoj{
+    background: #000;
+    border-radius: 10px;
+    text-align: center;
+    position: absolute;
+    margin-top: -270px;
+    margin-left: 850px;
+    font-size: 55px;
+    color: white;
+    padding: 10px;
+}
+.centradok{
+    background: #000;
+    border-radius: 10px;
+    text-align: center;
+    position: absolute;
+    margin-top: -270px;
+    margin-left: 230px;
+    font-size: 55px;
+    color: white;
+    padding: 10px;
+}
+.centradol{
+    background: #000;
+    border-radius: 10px;
+    text-align: center;
+    position: absolute;
+    margin-top: -270px;
+    margin-left: 850px;
+    font-size: 55px;
+    color: white;
+    padding: 10px;
+}
+.centradom{
+    background: #000;
+    border-radius: 10px;
+    text-align: center;
+    position: absolute;
+    margin-top: -270px;
+    margin-left: 230px;
+    font-size: 55px;
+    color: white;
+    padding: 10px;
+}
+.centradon{
+    background: #000;
+    border-radius: 10px;
+    text-align: center;
+    position: absolute;
+    margin-top: -270px;
+    margin-left: 750px;
+    font-size: 55px;
+    color: white;
+    padding: 10px;
+}
+.centradoo{
+    background: #000;
+    border-radius: 10px;
+    text-align: center;
+    position: absolute;
+    margin-top: -270px;
+    margin-left: 130px;
+    font-size: 55px;
+    color: white;
+    padding: 10px;
+}
+.centradop{
+    background: #000;
+    border-radius: 10px;
+    text-align: center;
+    position: absolute;
+    margin-top: -270px;
+    margin-left: 850px;
+    font-size: 55px;
+    color: white;
+    padding: 10px;
+}
+.centradoq{
+    background: #000;
+    border-radius: 10px;
+    text-align: center;
+    position: absolute;
+    margin-top: -270px;
+    margin-left: 230px;
+    font-size: 55px;
+    color: white;
+    padding: 10px;
+}
+.centrador{
+    background: #000;
+    border-radius: 10px;
+    text-align: center;
+    position: absolute;
+    margin-top: -270px;
+    margin-left: 850px;
+    font-size: 55px;
+    color: white;
+    padding: 10px;
+}
+.parrafo-izq1{
+  padding: 30px;
+  border-radius: 10px;
+  font-size: 12px;
+  background: rgba(0, 0, 0, 0.726);
+  position: absolute;
+  color: white;
+  top: 670px;
+  left: 220px;
+}
+.parrafo-izq2{
+  padding: 30px;
+  border-radius: 10px;
+  font-size: 12px;
+  background: rgba(0, 0, 0, 0.726);
+  position: absolute;
+  color: white;
+  top: 1530px;
+  left: 220px;
+}
+.parrafo-izq3{
+  padding: 30px;
+  border-radius: 10px;
+  font-size: 12px;
+  background: rgba(0, 0, 0, 0.726);
+  position: absolute;
+  color: white;
+  top: 2280px;
+  left: 220px;
+}
+.parrafo-izq4{
+  padding: 30px;
+  border-radius: 10px;
+  font-size: 12px;
+  background: rgba(0, 0, 0, 0.726);
+  position: absolute;
+  color: white;
+  top: 3150px;
+  left: 220px;
+}
+.parrafo-izq5{
+  padding: 30px;
+  border-radius: 10px;
+  font-size: 12px;
+  background: rgba(0, 0, 0, 0.726);
+  position: absolute;
+  color: white;
+  top: 3910px;
+  left: 220px;
+}
+.parrafo-izq6{
+  padding: 30px;
+  border-radius: 10px;
+  font-size: 12px;
+  background: rgba(0, 0, 0, 0.726);
+  position: absolute;
+  color: white;
+  top: 4700px;
+  left: 220px;
+}
+.parrafo-izq7{
+  padding: 30px;
+  border-radius: 10px;
+  font-size: 12px;
+  background: rgba(0, 0, 0, 0.726);
+  position: absolute;
+  color: white;
+  top: 5450px;
+  left: 220px;
+}
+.parrafo-izq8{
+  padding: 30px;
+  border-radius: 10px;
+  font-size: 12px;
+  background: rgba(0, 0, 0, 0.726);
+  position: absolute;
+  color: white;
+  top: 6310px;
+  left: 220px;
+}
+.parrafo-izq9{
+  padding: 30px;
+  border-radius: 10px;
+  font-size: 12px;
+  background: rgba(0, 0, 0, 0.726);
+  position: absolute;
+  color: white;
+  top: 7200px;
+  left: 220px;
+}
+
+
+.parrafo-der1{
+    padding: 30px;
+    border-radius: 10px;
+    font-size: 12px;
+    color: white;
+    background: rgba(0, 0, 0, 0.726);
+    position: absolute;
+    top: 200px;
+    left: 830px;
+}
+.parrafo-der2{
+    padding: 30px;
+    border-radius: 10px;
+    font-size: 12px;
+    color: white;
+    background: rgba(0, 0, 0, 0.726);
+    position: absolute;
+    top: 1100px;
+    left: 830px;
+}
+.parrafo-der3{
+    padding: 30px;
+    border-radius: 10px;
+    font-size: 12px;
+    color: white;
+    background: rgba(0, 0, 0, 0.726);
+    position: absolute;
+    top: 1810px;
+    left: 830px;
+}
+.parrafo-der4{
+    padding: 30px;
+    border-radius: 10px;
+    font-size: 12px;
+    color: white;
+    background: rgba(0, 0, 0, 0.726);
+    position: absolute;
+    top: 2700px;
+    left: 830px;
+}
+.parrafo-der5{
+    padding: 30px;
+    border-radius: 10px;
+    font-size: 12px;
+    color: white;
+    background: rgba(0, 0, 0, 0.726);
+    position: absolute;
+    top: 3550px;
+    left: 830px;
+}
+.parrafo-der6{
+    padding: 30px;
+    border-radius: 10px;
+    font-size: 12px;
+    color: white;
+    background: rgba(0, 0, 0, 0.726);
+    position: absolute;
+    top: 4300px;
+    left: 830px;
+}
+.parrafo-der7{
+    padding: 30px;
+    border-radius: 10px;
+    font-size: 12px;
+    color: white;
+    background: rgba(0, 0, 0, 0.726);
+    position: absolute;
+    top: 5030px;
+    left: 830px;
+}
+.parrafo-der8{
+    padding: 30px;
+    border-radius: 10px;
+    font-size: 12px;
+    color: white;
+    background: rgba(0, 0, 0, 0.726);
+    position: absolute;
+    top: 5900px;
+    left: 830px;
+}
+.parrafo-der9{
+    padding: 30px;
+    border-radius: 10px;
+    font-size: 12px;
+    color: white;
+    background: rgba(0, 0, 0, 0.726);
+    position: absolute;
+    top: 6750px;
+    left: 830px;
+}

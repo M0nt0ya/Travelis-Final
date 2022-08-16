@@ -1,0 +1,62 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{% static 'css/estilos11.css' %}">
+    <title>Travelist - Recuperación</title>
+    <link rel="icon" href="{% static 'img/LOGO PEQUEÑO.jpeg' %}">
+  </head>
+  <body>
+    <div class="capa"></div>
+    {% if editar_recuperaciones %}
+    <form action="{% url 'editar_recuperaciones' %}" method="POST">
+      {% csrf_token %}
+    <img src="{% static 'img/LOGO PEQUEÑO.jpeg' %}" class="logo-principal">
+    <div class="formu">
+        <h1>Recuperación de Contraseña</h1>
+        <div class="grupo">
+            <input type="text" value="{{ editar_recuperaciones.nombre }}" name="nombre" id="nombre" required><span class="barra"></span>
+            <label>Nombre</label>
+        </div>
+        <div class="grupo">
+            <input type="text" value="{{ editar_recuperaciones.apellido }}" name="apellido" id="apellido" required><span class="barra"></span>
+            <label>Apellido</label>
+        </div>
+        <div class="grupo">
+            <input type="text" value="{{ editar_recuperaciones.correo_Electronico }}" name="correo_Electronico" id="correo_Electronico" required><span class="barra"></span>
+            <label>Correo Electronico</label>
+        </div>
+        <input type="hidden" name="id" value="{{ editar_recuperaciones.id }}" />
+        <button class="boton1" onclick="history.go(-1)">Atras</button>
+        <button class="boton2" type="submit">Actualizar</button>
+    </div>
+    </form>
+
+    {% else %}
+    <div class="capa"></div>
+    <form action="{% url 'guardar_recuperaciones' %}" method="POST">
+      {% csrf_token %}
+    <img src="{% static 'img/LOGO PEQUEÑO.jpeg' %}" class="logo-principal">
+    <div class="formu">
+        <h1>Recuperación de Contraseña</h1>
+        <div class="grupo">
+            <input type="text" name="nombre" id="nombre" required><span class="barra"></span>
+            <label>Nombre</label>
+        </div>
+        <div class="grupo">
+            <input type="text" name="apellido" id="apellido" required><span class="barra"></span>
+            <label>Apellido</label>
+        </div>
+        <div class="grupo">
+            <input type="text" name="correo_Electronico" id="correo_Electronico" required><span class="barra"></span>
+            <label>Correo Electronico</label>
+        </div>
+        <button class="boton1" onclick="history.go(-1)">Atras</button>
+        <button class="boton2">Enviar</button>
+  </div>
+  </form>
+  {% endif %}
+</body>
+</html>

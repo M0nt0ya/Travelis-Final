@@ -1,0 +1,518 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Alternates|Poppins&display=swap');
+	*{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		font-family: 'Montserrat Alternates', sans-serif;
+	}
+	body{
+		background: url("../img/FONDO.jpg");
+		background-size: 100vw 100vh;
+		background-repeat: no-repeat;
+    background-attachment: fixed;
+	}
+	/* .capa{
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		background: rgba(0,0,0,0.6);
+		z-index: -1;
+		top: 0;left: 0;
+	} */
+	.header{
+		width: 100%;
+		height: 90px;
+		position: static;
+		top: 0;left: 0;
+	}
+	.container{
+		width: 90%;
+		max-width: 1200px;
+		margin: auto;
+	}
+	.container .btn-menu, .logo{
+		float: left;
+		line-height:100px;
+	}
+	.container .btn-menu label{
+		color: #fff;
+		font-size: 25px;
+		cursor: pointer;
+	}
+	.container .menu{
+		float: right;
+		line-height: 100px;
+	}
+	.container .menu a{
+		display: inline-block;
+		padding: 15px;
+		line-height: normal;
+		text-decoration: none;
+		color: #fff;
+		transition: all 0.3s ease;
+		border-bottom: 2px solid transparent;
+		font-size: 15px;
+		margin-right: 5px;
+	}
+	.container .menu a:hover{
+		border-bottom: 2px solid #c7c7c7;
+		padding-bottom: 5px;
+	}
+
+	#btn-menu{
+		display: none;
+	}
+	.container-menu{
+		position: absolute;
+		background: rgba(0,0,0,0.5);
+		width: 100%;
+		height: 100vh;
+		top: 0;left: 0;
+		transition: all 500ms ease;
+		opacity: 0;
+		visibility: hidden;
+	}
+	#btn-menu:checked ~ .container-menu{
+		opacity: 1;
+		visibility: visible;
+    z-index: 2;
+	}
+  .btn-abrir:hover{
+		background: #f57b00;
+		border-radius: 4px;
+		padding: 1px;
+	}
+  .btn-cerrar:hover{
+		background: red;
+		border-radius: 100%;
+	}
+	.cont-menu{
+		width: 100%;
+		max-width: 250px;
+		background: #2A2420;
+		height: 100vh;
+		position: absolute;
+		transition: all 500ms ease;
+		transform: translateX(-100%);
+	}
+	#btn-menu:checked ~ .container-menu .cont-menu {
+		transform: translateX(0%);
+	}
+	.cont-menu div{
+		transform: translateY(15%);
+	}
+	.cont-menu div a{
+		display: block;
+		text-decoration: none;
+		padding: 20px;
+		color: #c7c7c7;
+		border-left: 5px solid transparent;
+		transition: all 400ms ease;
+	}
+	.cont-menu div a:hover{
+		border-left: 5px solid #c7c7c7;
+		background: #734222;
+	}
+	.cont-menu label{
+		position: absolute;
+		right: 5px;
+		top: 10px;
+		color: #fff;
+		cursor: pointer;
+		font-size: 18px;
+	}
+.logo img{
+	margin-top: 20px;
+	display: inline;
+	width: 70px;
+	height: 60px;
+}
+.logo h1{
+	display: inline;
+	color: white;
+	font-size: 40px;
+	font-family: 'Dancing Script', cursive;
+	margin-top: 200px;
+}
+
+.img-perfil{
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+  background-color: #719af1;
+}
+
+#div-part{
+  display: flex;
+  width: 92%;
+  height: 500px;
+  margin-left: 50px;
+}
+
+.izquierda{
+  background: black;
+  width: 180vh;
+  border-radius: 15px;
+}
+.izquierda img{
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+.derecha{
+  width: 50%;
+  border-radius: 15px;
+}
+
+h1{
+  text-align: center;
+  margin: 10px 0;
+  font-weight: 800;
+  color: White;
+}
+
+form{
+  background: #543311;
+  width: 500px;
+  height: 330px;
+  padding: 10px 0;
+  border-radius: 10px;
+  box-shadow: 0 0 6px 0 #fff;
+  margin-top: 10px;
+  margin-left: 30px;
+}
+.formu{
+  width: 100%;
+  margin: auto;
+}
+
+form .grupo{
+  position: relative;
+  margin: 25px;
+  margin-top: -65px;
+}
+
+.grupo select{
+  background: none;
+  margin-top: 90px;
+  color:#c6c6c6;
+  font-size: 14px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid var(--colorTextos);
+  resize: none;
+  border-radius: 5px;
+}
+
+.grupo select:focus{
+  outline: none;
+  color: #fff;
+  background-color: transparent;
+  border-style: solid;
+  border-color: orange;
+  border-width: 1px;
+}
+
+.grupo select:focus~label,
+.grupo select:valid~label{
+  position: absolute;
+  top: -15px;
+  font-size: 12px;
+  color: #2196F3;
+}
+
+.grupo label{
+  color: var(--colorTextos);
+  font-size: 14px;
+  position: absolute;
+  left: 5px;
+  top: 15px;
+  transition: 0.5s ease all;
+  pointer-events: none;
+}
+
+.grupo select:focus~.barra::before{
+  width: 100%;
+}
+.grupo option{
+  color: black;
+}
+.barra{
+  position: relative;
+  display: block;
+  width: 100%;
+}
+.barra::before{
+  content: '';
+  top: -1px;
+  height: 2px;
+  width: 0%;
+  bottom: 0;
+  position: absolute;
+  background: linear-gradient(to right, #6A82FB, #FC5C7D);
+  transition: 0.3s ease all;
+  left: 0%;
+}
+
+.boton1{
+    display: inline-block;
+    height: 38px;
+    padding: 0 30px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 38px;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: #2A2420;
+    border-radius: 4px;
+    border: 1px solid #bbb;
+    cursor: pointer;
+    box-sizing: border-box;
+    margin-left: 30%;
+    margin-top: 5px;
+  }
+  
+  .boton1:hover {
+      background-color: #734222;
+  }
+
+@media screen and (max-width:1100px){
+  form{
+      width: 50%;
+  }
+}
+
+@media screen and (max-width:600px){
+  form{
+      width: 60%;
+  }
+}
+
+@media screen and (max-width:450px){
+  form{
+      width: 80%;
+  }
+}
+
+@media screen and (max-width:300px){
+  form{
+      width: 90%;
+  }
+}
+:root {
+--colorTextos: #fff;
+}
+
+form .grupo2{
+  position: relative;
+  margin: 25px;
+  margin-top: -65px;
+}
+
+.grupo2 input{
+  background: none;
+  margin-top: 90px;
+  color:#c6c6c6;
+  font-size: 14px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid var(--colorTextos);
+  resize: none;
+  border-radius: 5px;
+}
+
+.grupo2 input:focus{
+  outline: none;
+  color: #fff;
+  background-color: transparent;
+  border-style: solid;
+  border-color: orange;
+  border-width: 1px;
+}
+
+.grupo2 input:focus~.label4,
+.grupo2 input:valid~label{
+  position: absolute;
+  top: -15px;
+  font-size: 12px;
+  margin-left: 6px;
+  color: #2196F3;
+}
+
+form .grupo1{
+    position: relative;
+    margin: 25px;
+    margin-top: -65px;
+}
+
+.grupo1 input{
+    background: none;
+    margin-top: 65px;
+    color:#c6c6c6;
+    font-size: 14px;
+    padding: 10px 10px 10px 5px;
+    display: inline;
+    width: 49%;
+    border: none;
+    border-bottom: 1px solid var(--colorTextos);
+    resize: none;
+    border-radius: 5px;
+}
+
+.grupo1 input:focus{
+    outline: none;
+    color: #fff;
+    background-color: transparent;
+    border-style: solid;
+    border-color: orange;
+    border-width: 1px;
+}
+
+.grupo1 input:focus~.label1,
+.grupo1 input:valid~label{
+    position: absolute;
+    top: 45px;
+    font-size: 12px;
+    color: #2196F3;
+}
+
+.grupo1 input:focus~.label2,
+.grupo1 input:valid~label{
+    position: absolute;
+    top: 45px;
+    font-size: 12px;
+    color: #2196F3;
+}
+
+.grupo1 .label1{
+    color: var(--colorTextos);
+    font-size: 14px;
+    position: absolute;
+    left: 5px;
+    top: 80px;
+    transition: 0.5s ease all;
+    pointer-events: none;
+}
+
+.grupo1 .label2{
+    color: var(--colorTextos);
+    font-size: 14px;
+    position: absolute;
+    left: 229px;
+    top: 80px;
+    transition: 0.5s ease all;
+    pointer-events: none;
+}
+
+.grupo1 input:focus~.barra1::before{
+    width: 10%;
+}
+
+.formulario h1{
+  text-align: center;
+  font-weight: 800;
+  color: White;
+  font-size: 15px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.formulario{
+  background: #543311;
+  width: 500px;
+  height: 130px;
+  padding: 10px 0;
+  border-radius: 10px;
+  box-shadow: 0 0 6px 0 #fff;
+  margin-top: 20px;
+  margin-left: 30px;
+}
+
+
+.formulario .grupo3{
+    position: relative;
+    margin: 25px;
+    margin-top: -65px;
+}
+
+.grupo3 input{
+    background: none;
+    margin-top: 65px;
+    color:#c6c6c6;
+    font-size: 14px;
+    padding: 10px 10px 10px 5px;
+    display: inline;
+    width: 58%;
+    border: none;
+    border-bottom: 1px solid var(--colorTextos);
+    resize: none;
+    border-radius: 5px;
+}
+
+.grupo3 input:focus{
+    outline: none;
+    color: #fff;
+    background-color: transparent;
+    border-style: solid;
+    border-color: orange;
+    border-width: 1px;
+}
+
+.grupo3 input:focus~.label5,
+.grupo3 input:valid~label{
+    position: absolute;
+    top: 45px;
+    font-size: 12px;
+    color: #2196F3;
+}
+
+.grupo3 .label5{
+    color: var(--colorTextos);
+    font-size: 14px;
+    position: absolute;
+    left: 50px;
+    top: 80px;
+    transition: 0.5s ease all;
+    pointer-events: none;
+}
+
+.grupo3 input:focus~.barra1::before{
+    width: 10%;
+}
+
+.grupo3 img{
+  width: 40px;
+  height: 40px;
+}
+
+.boton2{
+display: inline;
+height: 38px;
+padding: 11px 30px;
+color: rgb(255, 255, 255);
+text-align: center;
+font-size: 10px;
+font-weight: 600;
+line-height: 38px;
+letter-spacing: .1rem;
+text-transform: uppercase;
+text-decoration: none;
+white-space: nowrap;
+background-color: #2A2420;
+border-radius: 4px;
+border: 1px solid #bbb;
+cursor: pointer;
+box-sizing: border-box;
+margin-top: 20px;
+}
+.boton2:hover{
+background: #734222;
+}

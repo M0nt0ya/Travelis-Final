@@ -1,0 +1,82 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Caompatible" content="ie=edge">
+    <title>Travelist - Admin</title>
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Raleway:500,600&display=swap" rel="stylesheet">
+    <link rel="icon" href="{% static 'img/LOGO PEQUEÑO.jpeg' %}">
+    <link rel="stylesheet" href="{% static 'css/estilos15.css' %}">
+</head>
+<body>
+  <header class="header">
+		<div class="container">
+		<div class="btn-menu">
+			<label for="btn-menu" class="btn-abrir">☰</label>
+		</div>
+			<div class="logo">
+          <img src="{% static 'img/LOGO PEQUEÑO.jpeg' %}" alt="" align="left">
+          <h1>Travelist</h1>
+			</div>
+			<div class="menu">
+        <!-- Cambiar link de imagen de perfil -->
+				<a href="../html/perfil.html" class="nombre-perfil"><img src="https://www.pngmart.com/files/21/Admin-Profile-Vector-PNG-Clipart.png" alt="" class="img-perfil" align="center"> Admin</a>
+			</div>
+		</div>
+	</header>
+	<div class="capa"></div>
+<input type="checkbox" id="btn-menu">
+<div class="container-menu">
+	<div class="cont-menu">
+		<div>
+            <a href="{% url 'horarios_Admin' %}">Destinos - Admin</a>
+			      <a href="{% url 'opinion_Admin' %}">Opiniones - Admin</a>
+            <a href="{% url 'recuperaciones_Admin' %}">Recuperaciones - Admin</a>
+            <a href="{% url 'pago_Tarjeta_Admin' %}">Tarjetas - Admin</a>
+		</div>
+		<label for="btn-menu" class="btn-cerrar">✖️</label>
+	</div>
+</div>
+<div>
+  <div class="titulo">
+    <table class="tabla-historial">
+      <tr class="titulo1">
+        <th><h1>Registros</h1></th>
+      </tr>
+      </table>
+  </div>
+  {% for registros in registro %}
+  <table class="tabla-historial1">
+    <tr class="subtitulo">
+        <td>NOMBRE</td>
+        <td>APELLIDO</td>
+        <td>USUARIO</td>
+        <td>CORREO ELECTRONICO</td>
+        <td>CONTRASEÑA</td>
+        <td>REPETIR CONTRASEÑA</td>
+    </tr>
+    <tr>
+      <td>{{registros.nombre}}</td>
+      <td>{{registros.apellido}}</td>
+      <td>{{registros.usuario}}</td>
+      <td>{{registros.correo_Electronico}} </td>
+      <td>{{registros.contraseña}}</td>
+      <td>{{registros.repetir_Contraseña}}</td>
+      <td>
+        <form action="{% url 'borrar_registro' registros.id %}" method="POST">
+          {% csrf_token %}
+          <button class="boton_Eliminar">Eliminar</button>
+          <a class="boton_Eliminar" href="{% url 'editar_registros_Admin' registros.id %}">Editar</a>
+        <form>
+      </td>
+    </tr>
+  </table>
+    {% empty %}
+    <h1>Sin Registros</h1>
+    {% endfor %}
+</div>
+</body>
+</html>

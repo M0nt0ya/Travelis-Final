@@ -1,0 +1,101 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Caompatible" content="ie=edge">
+    <title>Travelist - Horarios</title>
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Raleway:500,600&display=swap" rel="stylesheet">
+    <link rel="icon" href="{% static 'img/LOGO PEQUEÑO.jpeg' %}">
+    <link rel="stylesheet" href="{% static 'css/estilos3.css' %}">
+</head>
+<body>
+  <header class="header">
+		<div class="container">
+		<div class="btn-menu">
+			<label for="btn-menu" class="btn-abrir">☰</label>
+		</div>
+			<div class="logo">
+          <img src="{% static 'img/LOGO PEQUEÑO.jpeg' %}" alt="" align="left">
+          <h1>Travelist</h1>
+			</div>
+			<div class="menu">
+        <!-- Cambiar link de imagen de perfil -->
+				<a href="{% url 'perfil' %}" class="nombre-perfil"><img src="https://www.cinemascomics.com/wp-content/uploads/2020/08/goku-dragon-ball-super-ultra-instinto.jpg" alt="" class="img-perfil" align="center"> Ismael Andrade</a>
+			</div>
+		</div>
+	</header>
+	<div class="capa"></div>
+<input type="checkbox" id="btn-menu">
+<div class="container-menu">
+	<div class="cont-menu">
+		<div>
+			<a href="https://www.facebook.com/profile.php?id=100082181743423" target="_blank">Facebook</a>
+			<a href="https://www.instagram.com/cop_travelist/" target="_blank">Instagram</a>
+            <a href="https://twitter.com/DarlinSimba" target="_blank">Twitter</a>
+            <a href="https://wa.me/593994101922" target="_blank">WhatsApp</a>
+            <a href="html/rutas.html">Rutas y Destinos</a>
+            <a href="{% url 'opinion' %}">Opinion</a>
+		</div>
+		<label for="btn-menu" class="btn-cerrar">✖️</label>
+	</div>
+</div>
+<section id="div-part">
+  <div class="izquierda">
+<img src="{% static 'img/bus.png' %}">
+  </div>
+  <div class="derecha">
+    <form action="{% url 'guardar_horarios' %}" method="POST">
+      {% csrf_token %}
+    <div class="formu">
+        <h1 id="cambio">Adquiera su boleto ahora!</h1>
+        <div class="grupo">
+            <select name="destinos" id="destinos">
+                <option value="Atacames">ATACAMES ( ATACAMES )</option>
+                <option value="Borbon">BORBON ( BORBON )</option>
+                <option value="Carcelen">CARCELEN ( QUITOCARCELEN )</option>
+                <option value="Coca">COCA ( COCA )</option>
+                <option value="Cuenca">CUENCA ( CUENCA )</option>
+                <option value="Esmeraldas">ESMERALDAS ( ESMERALDAS )</option>
+                <option value="Guayaquil">GUAYAQUIL ( GUAYAQUIL )</option>
+                <option value="Lago Agrio">LAGO AGRIO ( LAGO AGRIO )</option>
+                <option value="Manta">MANTA ( MANTA )</option>
+                <option value="Portoviejo">PORTOVIEJO ( PORTOVIEJO )</option>
+                <option value="San Lorenzo">SAN LORENZO ( SAN LORENZO )</option>
+                <option value="Santa Elena">SANTA ELENA ( SANTA ELENA )</option>
+            </select>
+            <label class="label3">Ciudad de Origen</label>
+        </div>
+        <div class="grupo2">
+              <input type="text" name="terminal" id="" placeholder="QUITUMBE" value="Quitumbe"><span class="barra1"></span>
+              <label class="label4">Terminal</label>
+        </div>
+        <div class="grupo1">
+              <input type="text" name="fecha_ida" id="fecha_ida" onfocus="(this.type='date')" onblur="(this.type='text')" required> <span class="barra1"></span>
+              <label class="label1">Ida</label>
+              <input type="text" name="fecha_vuelta" id="fecha_vuelta" onfocus="(this.type='date')" onblur="(this.type='text')" required><span class="barra"></span>
+              <label class="label2">Retorno</label>
+        </div>
+        <button class="boton1" id="boton1">Buscar Asientos</button>
+    </div>
+    </form>
+<form class="formulario">
+  <div class="formu1">
+    <h1>¿Desea conocer el estado de sus boletos?</h1>
+    <div class="grupo3">
+      <img src="{% static 'img/ticketBus.png' %}" alt="" align="center">
+      <input type="text" name="" id="" required> <span class="barra1"></span>
+      <label class="label5">C.I. / RUC / Pasaporte</label>
+      <a class="boton2" href="../index.html">Consultar</a>
+    </div>
+    </div>
+</form>
+</div>
+</section>
+{% comment %} <script src="{% static 'js/main7.js' %}" charset="utf-8"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="sweetalert2.all.min.js"></script> {% endcomment %}
+</body>
+</html>

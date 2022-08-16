@@ -1,0 +1,60 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Caompatible" content="ie=edge">
+    <title>Travelist - Formas de Pago</title>
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Raleway:500,600&display=swap" rel="stylesheet">
+    <link rel="icon" href="{% static 'img/LOGO PEQUEÑO.jpeg' %}">
+    <link rel="stylesheet" href="{% static 'css/estilos6.css' %}">
+</head>
+<body>
+  <header class="header">
+		<div class="container">
+		<div class="btn-menu">
+			<label for="btn-menu" class="btn-abrir">☰</label>
+		</div>
+			<div class="logo">
+          <img src="{% static 'img/LOGO PEQUEÑO.jpeg' %}" alt="" align="left">
+          <h1>Travelist</h1>
+			</div>
+			<div class="menu">
+        <!-- Cambiar link de imagen de perfil -->
+				<a href="{% url 'perfil' %}" class="nombre-perfil"><img src="https://www.cinemascomics.com/wp-content/uploads/2020/08/goku-dragon-ball-super-ultra-instinto.jpg" alt="" class="img-perfil" align="center"> Ismael Andrade</a>
+			</div>
+		</div>
+	</header>
+	<div class="capa"></div>
+<input type="checkbox" id="btn-menu">
+<div class="container-menu">
+	<div class="cont-menu">
+		<div>
+			<a href="https://www.facebook.com/profile.php?id=100082181743423" target="_blank">Facebook</a>
+			<a href="https://www.instagram.com/cop_travelist/" target="_blank">Instagram</a>
+            <a href="https://twitter.com/DarlinSimba" target="_blank">Twitter</a>
+            <a href="https://wa.me/593994101922" target="_blank">WhatsApp</a>
+            <a href="html/rutas.html">Rutas y Destinos</a>
+            <a href="{% url 'opinion' %}">Opinion</a>
+		</div>
+		<label for="btn-menu" class="btn-cerrar">✖️</label>
+	</div>
+</div>
+<div class="metodos">
+  <h1>Metodos de Pago</h1>
+  <table name="pago" class="tabla-pagos">
+    <tr>
+      <th class="grupo"><a href="#" value="Paypal"><img src="{% static 'img/iconoPaypal.png' %}" alt=""></a></th>
+      <th class="grupo"><a href="pago.html" value="Tarjeta"><img src="{% static 'img/iconoTarjetas.png' %}" alt=""></a></th>
+    </tr>
+    <tr>
+      <th class="grupo"><a href="#" value="Transferencia"><img src="{% static 'img/iconoTransferencia.png' %}" alt=""></a></th>
+      <th class="grupo"><a href="#" value="Bitcoin"><img src="{% static 'img/iconoBitcoin.png' %}" alt=""></a></th>
+    </tr>
+  </table>
+  <button type="button" name="button" role="link" onclick="history.go(-1);">Atras</button>
+</div>
+</body>
+</html>

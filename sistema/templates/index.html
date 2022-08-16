@@ -1,0 +1,79 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Caompatible" content="ie=edge">
+    <title>Travelist - Inicio</title>
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Raleway:500,600&display=swap" rel="stylesheet">
+    <link rel="icon" href="{% static 'img/LOGO PEQUEÑO.jpeg' %}">
+    <link rel="stylesheet" href="{% static 'estilos.css' %}">
+</head>
+<body>
+  <header class="header">
+		<div class="container">
+		<div class="btn-menu">
+			<label for="btn-menu" class="btn-abrir">☰</label>
+		</div>
+			<div class="logo">
+          <img src="{% static 'img/LOGO PEQUEÑO.jpeg' %}" alt="" align="left">
+          <h1>Travelist</h1>
+			</div>
+			<div class="menu">
+				<a href="{% url 'login' %}">Iniciar Sesión</a>
+				<a href="{% url 'registro' %}">Registro</a>
+			</div>
+		</div>
+	</header>
+	<div class="capa"></div>
+<input type="checkbox" id="btn-menu">
+<div class="container-menu">
+	<div class="cont-menu">
+		<div>
+			<a href="https://www.facebook.com/profile.php?id=100082181743423" target="_blank">Facebook</a>
+			<a href="https://www.instagram.com/cop_travelist/" target="_blank">Instagram</a>
+            <a href="https://twitter.com/DarlinSimba" target="_blank">Twitter</a>
+            <a href="https://wa.me/593994101922" target="_blank">WhatsApp</a>
+            <a href="html/rutas.html">Rutas y Destinos</a>
+            <a href="{% url 'opinion' %}">Opinion</a>
+		</div>
+		<label for="btn-menu" class="btn-cerrar">✖️</label>
+	</div>
+</div>
+        <div class="slider-frame">
+                <ul>
+                    <li>
+                      <a href="{% url 'login' %}">COMPRA AHORA</a>
+                        <h2 class="subtitulo1">TRANSPORTAMOS TUS SUEÑOS</h2>
+                        <div class="linea-division"></div>
+                        <p class="subtitulo2">QUITO / BAÑOS | TODOS LOS DÍAS</p>
+                        <img src="{% static 'img/baños.jpeg' %}" alt="">
+                        <a href="{% url 'login' %}">COMPRA AHORA</a>
+                    </li>
+                    <li>
+                        <h2 class="subtitulo1">TRANSPORTAMOS TUS SUEÑOS</h2>
+                        <div class="linea-division"></div>
+                        <p class="subtitulo2">QUITO / GUAYAQUIL | TODOS LOS DÍAS</p>
+                        <img src="{% static 'img/playa.jpg' %}" alt="">
+                        <a href="{% url 'login' %}">COMPRA AHORA</a>
+                    </li>
+                    <li>
+                        <h2 class="subtitulo1">TRANSPORTAMOS TUS SUEÑOS</h2>
+                        <div class="linea-division"></div>
+                        <p class="subtitulo2">QUITO / LATACUNGA | TODOS LOS DÍAS</p>
+                        <img src="{% static 'img/lago.jpeg' %}" alt="">
+                        <a href="{% url 'login' %}">COMPRA AHORA</a>
+                    </li>
+                    <li>
+                        <h2 class="subtitulo1">TRANSPORTAMOS TUS SUEÑOS</h2>
+                        <div class="linea-division"></div>
+                        <p class="subtitulo2">QUITO / ESMERALDAS | TODOS LOS DÍAS</p>
+                        <img src="{% static 'img/playa.jpg' %}" alt="">
+                        <a href="{% url 'login' %}">COMPRA AHORA</a>
+                    </li>
+                </ul>
+            </div>
+</body>
+</html>
